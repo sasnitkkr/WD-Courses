@@ -1,0 +1,181 @@
+#title {
+  background-color: #ff4c68;
+  color: #fff;
+  /* padding-top: 3rem; */
+}
+#namefont {
+  font-family: Montserrat;
+  font-size: 3.5rem;
+  line-height: 1.5;
+  padding-right: 20px;
+}
+.container-fluid {
+  padding: 3% 15%;
+}
+
+/* Navbar styling +k+c */
+.navbar {
+  padding: 0 0 4rem;
+}
+#navbar-brand {
+  font-family: ubuntu;
+  font-size: 2.5rem;
+}
+
+.nav-item {
+  padding: 0 18px;
+}
+
+.nav-link {
+  font-family: Montserrat-Light;
+  font-size: 1.2rem;
+}
+
+/* Download Button */
+.download-button {
+  margin: 5% 3% 5% 0%;
+}
+
+/* Title Image */
+
+.title-image {
+  transform: rotate(25deg);
+  max-width: 60%;
+  vertical-align: bottom;
+  position: absolute; /*Image comes above whaterever on screen*/
+  right: 30%;
+}
+
+@media (max-width: 950px) {
+  .title-row {
+    text-align: center;
+  }
+  .title-image {
+    transform: rotate(0);
+    position: static;
+  }
+}
+
+/* Features Section*/
+#features {
+  padding: 7% 15%;
+  background-color: #fff;
+  position: relative;
+  z-index: 1;
+}
+.feature-box {
+  text-align: center;
+  padding: 5%;
+}
+#features h3 {
+  font-family: Montserrat;
+}
+
+#features p {
+  font-family: Montserrat-Light;
+  color: grey;
+}
+
+#features .fas {
+  color: #ef8172;
+  margin-bottom: 1rem;
+}
+
+#features .fas:hover {
+  color: #ff4c68;
+}
+
+/* Testimonial */
+#testimonials {
+  background-color: #ef8172;
+  text-align: center;
+  color: #fff;
+}
+
+#testimonials h2 {
+  font-family: Montserrat;
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+#testimonials img {
+  width: 10%;
+  border-radius: 100%;
+  margin: 20px;
+}
+
+.carousel-item {
+  padding: 7% 15%;
+}
+/* Press */
+#press {
+  background-color: #ef8172;
+  padding-bottom: 5%;
+  text-align: center;
+}
+
+#press img {
+  width: 15%;
+  margin: 20px 15px 50px;
+}
+
+/* Price */
+
+#pricing {
+  padding: 100px;
+  text-align: center;
+}
+
+.pricing-col {
+  padding: 3% 2%;
+}
+
+#pricing .btn {
+  width: 100%; /* or btn-block */
+}
+
+/*  Call to Action  */
+
+#cta {
+  background-color: #ff4c68;
+  line-height: 2;
+  padding: 7% 15%;
+  text-align: center;
+}
+
+.cta-head {
+  color: #ffffff;
+  font-family: Montserrat-Black;
+  font-weight: bold;
+  font-size: 3.5rem;
+  line-height: 1.5;
+  margin-bottom: 50px;
+}
+
+#cta .fab {
+  margin-right: 4px;
+}
+
+.btn {
+  margin: 10px;
+}
+
+/* Footer */
+
+#footer {
+  background-color: #fff;
+  text-align: center;
+  padding: 7% 15%;
+}
+
+.fab {
+  margin: 10px;
+}
+
+.far {
+  margin: 10px;
+}
+
+.crt {
+  margin-top: 20px;
+}
