@@ -1,0 +1,47 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.flex-container{
+    display: flex;
+    border: 2px solid brown;
+    height: 100vh;
+
+    flex-direction: row;
+    /* default row, row reverse, column reverse */
+
+    justify-content: center;
+    /* center, flex-start flex-end */
+
+    align-items: center;
+    /* center, flex-start flex-end */
+    /* Inspect press Tab see various options; */
+
+    flex-wrap: wrap-reverse;
+    /* responsive, donot go out of container goes down => start wrap */
+    /* wrap-reverse 4 3 2 1 */
+}
+
+.flex-item{
+    background-color: blue;
+    border: 2px solid black;
+    margin: 2px;
+    width: 100px;
+    height: 120px;
+}
+
+.item-1{
+    order: 0;
+    flex-grow: 3;
+    /* jiska order bada voh end me aayega */
+    /* align-self: center; */
+}
+
+.item-2{
+    flex-grow: 4;
+}
+
+.item-3{
+    flex-shrink: 2;
+}
