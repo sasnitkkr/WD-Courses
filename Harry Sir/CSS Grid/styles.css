@@ -1,0 +1,59 @@
+/*
+    Grid :- container ko block banaya
+    Inline grid :- container ko inline banayega
+
+    Horizontal => Justify Items
+    Vertical => Align Items
+
+    Justify item -> grid container ki property
+    Justify self -> grid item ki
+
+    place-items
+    place-self : center; item hori and verti center
+*/
+
+.container{
+    background-color: red;
+    width: 700px;
+    height: 500px;
+    display: grid; /*CSS Bhai ko bato ki is div ko grid banao*/
+    /* grid-template-columns: 100px 100px 100px; 3 column diye 100px k */
+    /* grid-template-rows: 100px 100px 100px; */
+    grid-template-columns: repeat(3, 1fr);
+     /* Jitni Space Available hai uske hosaab se 3 cols*/
+    /* 1 fraction of entire width available */
+    /* grid-template-rows: repeat(3, 1fr); */
+    grid-template-rows: 100px repeat(2, 1fr)  ;
+    row-gap: 12px; /* 2 excel sheet row k beech ka gap*/
+    column-gap: 12px;
+    justify-items: center;
+    align-items: center;
+    /* sare .item in center horzontally */
+}
+
+.item{
+    background-color: yellow;
+    height: 90px;
+    width: 90px; 
+    /* Removing width and height will make the child take entire cell*/
+}
+
+.item-1{
+    grid-column-start: 1; 
+    /* line 1 se start */
+    grid-column-end: 3;
+    /* line 3 pe end */
+    /* Baki item khisak jayege observe last one */
+
+    /* grid-column: 1 span / 2; */
+    /* 1 se start krte hue 2 col span karo*/
+
+    /* grid-column: 1 / 2; */
+    /* line 1 se line 2 */
+
+    
+}
+
+/* .item-l{
+    z-index: 100; not visible even then out of box
+} */
